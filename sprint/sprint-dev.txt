@@ -1,0 +1,7 @@
+/*
+* sprint 1 - 23/01/2015
+*/
+
+- creacion del bundle AcmeErp
+- view login,home y permiso
+- estilos css
