@@ -1,0 +1,7 @@
+parameters:
+#    acme_erp.example.class: Acme\ErpBundle\Example
+
+services:
+#    acme_erp.example:
+#        class: %acme_erp.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

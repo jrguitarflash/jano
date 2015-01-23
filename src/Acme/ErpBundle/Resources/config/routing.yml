@@ -1,0 +1,15 @@
+acme_erp_homepage:
+    path:     erp/hello/{name}
+    defaults: { _controller: AcmeErpBundle:Default:index }
+
+acme_erp_login:
+   path: erp/login/
+   defaults: { _controller:AcmeErpBundle:Default:login }
+
+acme_erp_home:
+   path: erp/home/
+   defaults: { _controller:AcmeErpBundle:Default:home }
+
+acme_erp_permiso:
+   path: erp/home/permiso/
+   defaults: { _controller:AcmeErpBundle:Default:permiso }

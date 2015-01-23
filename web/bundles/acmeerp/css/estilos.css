@@ -1,0 +1,292 @@
+/*
+* login
+*/
+
+	.login
+	{
+		background-color: #D5D6D6;
+		padding:10px;
+		padding-left: 0px;
+		padding-right: 0px;
+		display: block;
+		float: left;
+		width:100%;
+		height: 100%;
+	}
+
+	.login label
+	{
+		float: left;
+		clear: left;
+		padding-top:10px;
+		font-weight: bolder;
+	}
+
+	.login input
+	{
+		float:left;
+		clear:left;
+		width: 280px;
+		height: 30px;
+		border-radius: 5px;
+	}
+
+	.login select
+	{
+		float:left;
+		clear: left;
+		width: 280px;
+		height: 30px;
+		border-radius: 5px;
+	}
+
+	.login button
+	{
+		float:left;
+		margin-top:10px;
+		background-color: #323232;
+		border: 0px;
+		color:white;
+		font-weight: bolder;
+		padding:10px;
+		border-radius: 5px;
+	}
+
+	.login button:hover
+	{
+		background-color: #BF0A1C;
+		cursor: pointer;
+	}
+
+/*
+* body
+*/
+
+	body
+	{
+		width:100%;
+		margin:0% auto 0% auto;
+		padding: 0px;
+		height:75%
+	}
+
+/*
+* header
+*/
+
+	header
+	{
+		background-color:#323232;
+		width:100%;
+		color:white;
+		padding:10px;
+		padding-left: 0px;
+		padding-right: 0px;
+		border-bottom: 1px solid #BF0A1C;
+	}
+
+	header h1
+	{
+		display:inline;
+
+	}
+
+	header div
+	{
+		display: inline;
+		float: right;
+		margin-right: 85px;
+	}
+
+	header .cuenta ul
+	{
+		display: block;
+		list-style: none;
+		margin-bottom: 0px;
+	}
+
+	header .cuenta ul li > .cuenta-niv
+	{
+		display: none;
+	}
+
+	header .cuenta ul li:hover > .cuenta-niv
+	{
+		display: block;
+		position: absolute;
+	}
+
+	header .cuenta ul li .cuenta-niv
+	{
+		background-color: white;
+	}
+
+	.cuenta-niv li a 
+	{
+		text-decoration: none;
+		color: black;
+	}
+
+/*
+* footer
+*/
+
+	footer
+	{
+		background-color: #BF0A1C;
+		padding: 10px;
+		width: 100%;
+		font-weight: bold;
+		text-align: center;
+		color:white;
+		float: left;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+/*
+* menu
+*/
+
+	.menu
+	{
+		margin:auto;
+	}
+
+	.menu li
+	{
+		float:left;
+		padding:10px;
+		padding-right: 0px;
+		padding-left: 0px;
+		list-style: none;
+	}
+
+	.menu-niv li
+	{
+		float:left;
+		/*clear: left;*/
+		padding:10px;
+		padding-left: 0px;
+		width: 120px;
+		background-color:#323232;
+		/*overflow-x:auto;*/ 
+		text-align: center;
+	}
+
+	.menu-niv li ul
+	{
+		padding: 0px;
+	}
+
+	.menu-niv li a
+	{
+		background-color: none;
+		color: white;
+		padding: 10px;
+		text-decoration: none;
+	}
+
+	.menu-niv li > ul
+	{
+		display: none;
+	}
+
+	.menu-niv li:hover > ul
+	{
+		display: block;
+		position: absolute;
+	}
+
+	.menu-niv li:hover
+	{
+		background-color: #BF0A1C;
+	}
+
+/*
+* contenido
+*/
+
+	.contenido
+	{
+		float: left;
+		/*clear: left;*/
+		padding:10px;
+		height: auto; 
+		width: 100%;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+/*
+* opcion
+*/
+
+	.opcion
+	{
+		background-color:#323232;
+		width: 100%;
+		float: left;
+	}
+
+/*
+* permiso
+*/
+
+	.permiso fieldset
+	{
+		float: left;
+	}
+
+	.permiso button
+	{
+		float:left;
+		margin-top:10px;
+		background-color: #323232;
+		border: 0px;
+		color:white;
+		font-weight: bolder;
+		padding:10px;
+		border-radius: 5px;
+		float: left;
+		clear: left;
+	}
+
+	.permiso button:hover
+	{
+		background-color: #BF0A1C;
+		cursor: pointer;
+	}
+
+/*
+* acceso
+*/
+
+	.acceso
+	{
+		background-color: white;
+		height: auto;
+		float: left;
+		clear: left;
+	}
+
+	.acceso-niv
+	{
+		list-style: none;
+	}
+
+/*
+* mensaje
+*/
+
+	.mensaje
+	{
+		background-color: #449D44;
+		width: 100%;
+		padding:10px;
+		padding-left: 0px;
+		padding-right: 0px;
+		border-radius:0px;
+		color:white;
+		display: none;
+	}

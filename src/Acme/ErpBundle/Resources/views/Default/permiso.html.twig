@@ -1,0 +1,51 @@
+{% extends 'AcmeErpBundle::Default/home.html.twig' %}
+
+{% block contenido %}
+<section class="contenido" >
+	<h2>Contenido permiso</h2>
+
+	<div class="mensaje" >
+		mensaje...!
+	</div>
+
+	<div class="permiso" >
+
+		<fieldset>
+			<legend>Empresas</legend>
+			<select size="10" >
+				<option>Electrowerke</option>
+				<option>Eltrotec</option>
+			</select>
+		</fieldset>
+
+		<fieldset>
+			<legend>Perfiles</legend>
+			<select size="10" >
+				<option>Administracion</option>
+				<option>Comercial</option>
+			</select>
+		</fieldset>
+
+		<fieldset>
+			<legend>Accesos</legend>
+			<div class="acceso" >
+				<ul class="acceso-niv" >
+					<li>
+						<input type="checkbox">Usuario
+						<ul class="acceso-niv" >
+							<li><input type="checkbox">Permisos</li>
+							<li><input type="checkbox">Perfiles</li>
+						</ul>
+					</li>
+					<li><input type="checkbox">Finanzas</li>
+				</ul>
+
+			</div>
+		</fieldset>
+
+		<button>Guardar</button>
+
+	</div>
+
+</section>
+{% endblock %}
