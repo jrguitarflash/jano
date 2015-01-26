@@ -203,6 +203,22 @@
 		background-color: #BF0A1C;
 	}
 
+	.menu-sub li
+	{
+		float: left;
+		clear: left;
+		margin-left:130px;
+		top:-30px;
+		position:relative;
+	}
+
+
+	.menu-tab li
+	{
+		float: none;
+		position: relative;
+	}
+
 /*
 * contenido
 */

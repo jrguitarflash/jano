@@ -1,4 +1,10 @@
 /*
+* sprint 2 - 26/01/2015
+*/
+
+- menu home horizontal
+
+/*
 * sprint 1 - 23/01/2015
 */
 
