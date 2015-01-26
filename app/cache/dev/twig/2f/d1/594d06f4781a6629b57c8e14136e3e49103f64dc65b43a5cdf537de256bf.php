@@ -1,6 +1,6 @@
 <?php
 
-/* AcmeErpBundle::Default/home.html.twig */
+/* AcmeErpBundle:Default:home.html.twig */
 class __TwigTemplate_2fd1594d06f4781a6629b57c8e14136e3e49103f64dc65b43a5cdf537de256bf extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -60,13 +60,13 @@ class __TwigTemplate_2fd1594d06f4781a6629b57c8e14136e3e49103f64dc65b43a5cdf537de
 \t\t\t\t\t<li><a href=\"#\" >inicio</a></li>
 \t\t\t\t\t<li>
 \t\t\t\t\t\t<a href=\"#\" >usuarios</a>
-\t\t\t\t\t\t<ul class=\"menu-niv\" >
+\t\t\t\t\t\t<ul class=\"menu-niv menu-tab\" >
 \t\t\t\t\t\t\t<li>
 \t\t\t\t\t\t\t\t<a href=\"#\" >permisos</a>
-\t\t\t\t\t\t\t\t<ul class=\"menu-niv\" >
+\t\t\t\t\t\t\t\t<ul class=\"menu-niv menu-sub\" >
 \t\t\t\t\t\t\t\t\t<li>
 \t\t\t\t\t\t\t\t\t\t<a href=\"#\" >admin</a>
-\t\t\t\t\t\t\t\t\t\t<ul class=\"menu-niv\" >
+\t\t\t\t\t\t\t\t\t\t<ul class=\"menu-niv menu-sub\" >
 \t\t\t\t\t\t\t\t\t\t\t<li><a href=\"#\" >admin1</a></li>
 \t\t\t\t\t\t\t\t\t\t\t<li><a href=\"#\" >admin2</a></li>
 \t\t\t\t\t\t\t\t\t\t</ul>\t
@@ -74,18 +74,25 @@ class __TwigTemplate_2fd1594d06f4781a6629b57c8e14136e3e49103f64dc65b43a5cdf537de
 \t\t\t\t\t\t\t\t\t<li><a href=\"#\" >user</a></li>
 \t\t\t\t\t\t\t\t</ul>
 \t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t<li><a href=\"#\" >perfiles</a></li>
+\t\t\t\t\t\t\t<li>
+\t\t\t\t\t\t\t\t<a href=\"#\" >perfiles</a>
+\t\t\t\t\t\t\t\t<ul class=\"menu-niv menu-sub\" >
+\t\t\t\t\t\t\t\t\t<li><a href=\"#\" >admin1</a></li>
+\t\t\t\t\t\t\t\t\t<li><a href=\"#\" >admin2</a></li>
+\t\t\t\t\t\t\t\t</ul>\t
+\t\t\t\t\t\t\t</li>
 \t\t\t\t\t\t\t<li><a href=\"#\" >menus</a></li>
 \t\t\t\t\t\t</ul>
 \t\t\t\t\t</li>
+\t\t\t\t\t<li><a href=\"#\">Finanzas</a></li>
 \t\t\t\t</ul>\t
 
 \t\t\t</section>
 
 \t\t\t";
-        // line 63
+        // line 70
         $this->displayBlock('contenido', $context, $blocks);
-        // line 68
+        // line 75
         echo "
 \t\t\t<footer>
 \t\t\t\tElectrowerke 2015 | Derechos Reservados
@@ -98,10 +105,10 @@ class __TwigTemplate_2fd1594d06f4781a6629b57c8e14136e3e49103f64dc65b43a5cdf537de
 </html>";
     }
 
-    // line 63
+    // line 70
     public function block_contenido($context, array $blocks = array())
     {
-        // line 64
+        // line 71
         echo "\t\t\t<section class=\"contenido\" >
 \t\t\t\t<h2>Contenido home</h2>
 \t\t\t</section>
@@ -110,7 +117,7 @@ class __TwigTemplate_2fd1594d06f4781a6629b57c8e14136e3e49103f64dc65b43a5cdf537de
 
     public function getTemplateName()
     {
-        return "AcmeErpBundle::Default/home.html.twig";
+        return "AcmeErpBundle:Default:home.html.twig";
     }
 
     public function isTraitable()
@@ -120,6 +127,6 @@ class __TwigTemplate_2fd1594d06f4781a6629b57c8e14136e3e49103f64dc65b43a5cdf537de
 
     public function getDebugInfo()
     {
-        return array (  105 => 64,  102 => 63,  89 => 68,  87 => 63,  28 => 7,  20 => 1,);
+        return array (  112 => 71,  109 => 70,  96 => 75,  94 => 70,  28 => 7,  20 => 1,);
     }
 }
