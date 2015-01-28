@@ -2,7 +2,7 @@
 * sprint 3 - 28/01/2015 
 */
 
-- pruebas commits en repositorio
+- pruebas commits en repositorio master
 
 /*
 * sprint 2 - 26/01/2015
