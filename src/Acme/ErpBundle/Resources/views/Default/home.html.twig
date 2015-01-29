@@ -5,79 +5,87 @@
 	<head>
 
 		<link rel="stylesheet" type="text/css" href="{{ asset('bundles/acmeerp/css/estilos.css') }}">
+		<script type="text/javascript" src="{{ asset('bundles/acmeerp/js/script.js') }}" ></script>
 
 	</head>
 
 	<body>
 
-		<input type="hidden" id="view" value="home" >
+		<input type="hidden" id="view" value="{{ view }}" >
 
-		<div>
+		<form name="{{ view }}" id="{{ view }}"  method="post" action="" >
 
-			<header>
-				<h1>Home</h1>
-				<div>
-					<span class="cuenta" >
-						<ul class="cuenta-niv" >
-							<li>
-								<img src="">jraul
-								<ul class="cuenta-niv" >
-									<li><a href="#">Mi cuenta</a></li>
-									<li><a href="#">Configuracion</a></li>
-									<li><a href="#">Cerrar</a></li>
-								</ul>
-							</li>
-						</ul>
-					</span>
-				</div>		
-			</header>
+			<input type="hidden" name="accion" value="" >
 
-			<section class="opcion" >
 
-				<ul class="menu menu-niv" >
-					<li><a href="#" >inicio</a></li>
-					<li>
-						<a href="#" >usuarios</a>
-						<ul class="menu-niv menu-tab" >
-							<li>
-								<a href="#" >permisos</a>
-								<ul class="menu-niv menu-sub" >
-									<li>
-										<a href="#" >admin</a>
-										<ul class="menu-niv menu-sub" >
-											<li><a href="#" >admin1</a></li>
-											<li><a href="#" >admin2</a></li>
-										</ul>	
-									</li>
-									<li><a href="#" >user</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#" >perfiles</a>
-								<ul class="menu-niv menu-sub" >
-									<li><a href="#" >admin1</a></li>
-									<li><a href="#" >admin2</a></li>
-								</ul>	
-							</li>
-							<li><a href="#" >menus</a></li>
-						</ul>
-					</li>
-					<li><a href="#">Finanzas</a></li>
-				</ul>	
+			<div>
 
-			</section>
+				<header>
+					<h1>Home</h1>
+					<div>
+						<span class="cuenta" >
+							<ul class="cuenta-niv" >
+								<li>
+									<img src="">&nbsp;<strong>{{ user }}</strong> ( {{ perfil }} )
+									<ul class="cuenta-niv" >
+										<li><a href="#">Mi cuenta</a></li>
+										<li><a href="{{ url('acme_erp_inicio') }}home">Configuracion</a></li>
+										<li><a href="#" id="cerrar" >Cerrar</a></li>
+									</ul>
+								</li>
+							</ul>
+						</span>
+					</div>		
+				</header>
 
-			{% block contenido %}
-			<section class="contenido" >
-				<h2>Contenido home</h2>
-			</section>
-			{% endblock %}
+				<section class="opcion" >
 
-			<footer>
-				Electrowerke 2015 | Derechos Reservados
-			</footer>
+					<ul class="menu menu-niv" >
+						<li><a href="#" >inicio</a></li>
+						<li>
+							<a href="#" >usuarios</a>
+							<ul class="menu-niv menu-tab" >
+								<li>
+									<a href="#" >permisos</a>
+									<ul class="menu-niv menu-sub" >
+										<li>
+											<a href="#" >admin</a>
+											<ul class="menu-niv menu-sub" >
+												<li><a href="#" >admin1</a></li>
+												<li><a href="#" >admin2</a></li>
+											</ul>	
+										</li>
+										<li><a href="#" >user</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" >perfiles</a>
+									<ul class="menu-niv menu-sub" >
+										<li><a href="#" >admin1</a></li>
+										<li><a href="#" >admin2</a></li>
+									</ul>	
+								</li>
+								<li><a href="#" >menus</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Finanzas</a></li>
+					</ul>	
 
-		</div>
+				</section>
+
+				{% block contenido %}
+				<section class="contenido" >
+					<h2>Contenido home</h2>
+				</section>
+				{% endblock %}
+
+				<footer>
+					Electrowerke 2015 | Derechos Reservados
+				</footer>
+
+			</div>
+
+		</form>
 
 	</body>
 

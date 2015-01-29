@@ -5,35 +5,57 @@
 	<head>
 
 		<link rel="stylesheet" type="text/css" href="{{ asset('bundles/acmeerp/css/estilos.css') }}">
+		<script type="text/javascript" src="{{ asset('bundles/acmeerp/js/script.js') }}" ></script>
 
 	</head>
 
 	<body>
 
-		<input type="hidden" id="view" value="login" >
+		<input type="hidden" id="view" value="{{ view }}" >
 
-		<div>
+		<form name="login" id="login" method="post" action="" >
 
-			<header>
-				<h1>Login</h1>
-			</header>
+			<input type="hidden" name="accion" value="" >
 
-			<section class="login" >
-				<label >usuario</label>
-				<input type="text" />
-				<label >clave</label>
-				<input type="password" >
-				<label >Empresa</label>
-				<select ></select>
-				<label ></label>
-				<button >Ingresar</button>
-			</section>
+			<div>
 
-			<footer>
-				Electrowerke 2015 | Derechos Reservados
-			</footer>
+				<header>
+					<h1>Login</h1>
+				</header>
 
-		</div>
+				<section class="login" >
+						<label >usuario</label>
+						<input type="text"  name="user" />
+						<label >clave</label>
+						<input type="password" name="clave" >
+						<label >Empresa</label>
+						<select name="empresa" >
+							{% for u in users %}
+							<option value="{{ u.empresa_id }}" >{{ u.emp_nombre }}</option>
+							{% endfor %}
+						</select>
+						<label ></label>
+						<button id="logear" >Ingresar</button>
+						<span>{{ mensaje }}</span>
+				</section>
+
+				<footer>
+					Electrowerke 2015 | Derechos Reservados
+				</footer>
+
+				<!-- Test Data -->
+
+				<!--
+				<ul>
+					<li></li>
+				</ul>
+				-->
+				
+				
+
+			</div>
+
+		</form>
 
 	</body>
 

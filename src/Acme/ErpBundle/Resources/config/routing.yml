@@ -11,5 +11,8 @@ acme_erp_home:
    defaults: { _controller:AcmeErpBundle:Default:home }
 
 acme_erp_permiso:
-   path: erp/home/permiso/
+   path: erp/permiso/
    defaults: { _controller:AcmeErpBundle:Default:permiso }
+
+acme_erp_inicio:
+   path: erp/

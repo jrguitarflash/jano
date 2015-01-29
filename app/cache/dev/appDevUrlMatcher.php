@@ -135,25 +135,31 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
                 return array (  '_controller' => 'Acme\\ErpBundle\\Controller\\DefaultController::loginAction',  '_route' => 'acme_erp_login',);
             }
 
-            if (0 === strpos($pathinfo, '/erp/home')) {
-                // acme_erp_home
-                if (rtrim($pathinfo, '/') === '/erp/home') {
-                    if (substr($pathinfo, -1) !== '/') {
-                        return $this->redirect($pathinfo.'/', 'acme_erp_home');
-                    }
-
-                    return array (  '_controller' => 'Acme\\ErpBundle\\Controller\\DefaultController::homeAction',  '_route' => 'acme_erp_home',);
+            // acme_erp_home
+            if (rtrim($pathinfo, '/') === '/erp/home') {
+                if (substr($pathinfo, -1) !== '/') {
+                    return $this->redirect($pathinfo.'/', 'acme_erp_home');
                 }
 
-                // acme_erp_permiso
-                if (rtrim($pathinfo, '/') === '/erp/home/permiso') {
-                    if (substr($pathinfo, -1) !== '/') {
-                        return $this->redirect($pathinfo.'/', 'acme_erp_permiso');
-                    }
+                return array (  '_controller' => 'Acme\\ErpBundle\\Controller\\DefaultController::homeAction',  '_route' => 'acme_erp_home',);
+            }
 
-                    return array (  '_controller' => 'Acme\\ErpBundle\\Controller\\DefaultController::permisoAction',  '_route' => 'acme_erp_permiso',);
+            // acme_erp_permiso
+            if (rtrim($pathinfo, '/') === '/erp/permiso') {
+                if (substr($pathinfo, -1) !== '/') {
+                    return $this->redirect($pathinfo.'/', 'acme_erp_permiso');
                 }
 
+                return array (  '_controller' => 'Acme\\ErpBundle\\Controller\\DefaultController::permisoAction',  '_route' => 'acme_erp_permiso',);
+            }
+
+            // acme_erp_inicio
+            if (rtrim($pathinfo, '/') === '/erp') {
+                if (substr($pathinfo, -1) !== '/') {
+                    return $this->redirect($pathinfo.'/', 'acme_erp_inicio');
+                }
+
+                return array('_route' => 'acme_erp_inicio');
             }
 
         }

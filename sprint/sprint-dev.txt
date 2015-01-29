@@ -1,4 +1,13 @@
 /*
+* sprint 4 - 29/01/2015
+*/
+
+- validacion de inicio de sesion
+- creacion de sesion
+- cierre de sesion
+
+
+/*
 * sprint 3 - 28/01/2015 
 */
 

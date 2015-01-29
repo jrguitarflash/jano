@@ -2,4 +2,4 @@ _assetic:
     resource: .
     type: assetic
 _app:
-    resource: /var/www/html/dev/symfony-dev/proyecto/app/config/routing_dev.yml
+    resource: 'C:\wamp\www\proyectos\jano_symfony\jano\app/config/routing_dev.yml'
