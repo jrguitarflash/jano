@@ -1,11 +1,46 @@
 /*
-* sprint 4 - 29/01/2015
+* modulos
+*/
+
+modulo permisos
+modulo sesion
+modulo entorno
+
+/*
+*****************
+* modulo permisos
+*****************
+*/
+
+/*
+* sprint 1 - 14/02/2015
+*/
+
+- lista de empresas negocio
+- perfiles de empresa negocio
+- tableros de control
+- accesos de menu
+
+/*
+****************
+* modulo sesion
+****************
+*/
+
+
+/*
+* sprint 1 - 29/01/2015
 */
 
 - validacion de inicio de sesion
 - creacion de sesion
 - cierre de sesion
 
+/*
+*****************
+* modulo entorno
+*****************
+*/
 
 /*
 * sprint 3 - 28/01/2015 

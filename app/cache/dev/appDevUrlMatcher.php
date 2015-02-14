@@ -162,6 +162,24 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
                 return array('_route' => 'acme_erp_inicio');
             }
 
+            // acme_erp_perfilAjax
+            if (rtrim($pathinfo, '/') === '/erp/perfilAjax') {
+                if (substr($pathinfo, -1) !== '/') {
+                    return $this->redirect($pathinfo.'/', 'acme_erp_perfilAjax');
+                }
+
+                return array (  '_controller' => 'Acme\\ErpBundle\\Controller\\DefaultController::perfilAjaxAction',  '_route' => 'acme_erp_perfilAjax',);
+            }
+
+            // acme_erp_tableroJson
+            if (rtrim($pathinfo, '/') === '/erp/tableroJson') {
+                if (substr($pathinfo, -1) !== '/') {
+                    return $this->redirect($pathinfo.'/', 'acme_erp_tableroJson');
+                }
+
+                return array (  '_controller' => 'Acme\\ErpBundle\\Controller\\DefaultController::tableroJsonAction',  '_route' => 'acme_erp_tableroJson',);
+            }
+
         }
 
         // homepage

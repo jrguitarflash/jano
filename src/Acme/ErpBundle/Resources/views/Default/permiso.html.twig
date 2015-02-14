@@ -12,24 +12,45 @@
 
 		<fieldset>
 			<legend>Empresas</legend>
-			<select size="10" >
-				<option>Electrowerke</option>
-				<option>Eltrotec</option>
+			<select size="10" id="empresa" >
+				<!--
+					<option>Electrowerke</option>
+					<option>Electrowerke</option>
+				-->
+				{% for a in entidad  %}
+				<option value="{{ a.id }}" >{{ a.empresa }}</option>
+				{% endfor %}
 			</select>
 		</fieldset>
 
 		<fieldset>
 			<legend>Perfiles</legend>
-			<select size="10" >
-				<option>Administracion</option>
-				<option>Comercial</option>
+			<select size="10"  id="perfil" >
+				<!--
+					<option>Administracion</option>
+					<option>Comercial</option>
+				-->
 			</select>
+		</fieldset>
+
+		<fieldset>
+			<legend>Tableros</legend>
+			<div class="acceso" >
+				<ul class="acceso-niv" >
+					{% for t in tablero %}
+						<li>
+							<input type='checkbox' value="{{ t.id }}" name="tablero[]" id="tablero" />{{ t.titulo }}
+						</li>
+					{% endfor %}
+				</ul>
+			</div>
 		</fieldset>
 
 		<fieldset>
 			<legend>Accesos</legend>
 			<div class="acceso" >
 				<ul class="acceso-niv" >
+					<!--
 					<li>
 						<input type="checkbox">Usuario
 						<ul class="acceso-niv" >
@@ -38,8 +59,9 @@
 						</ul>
 					</li>
 					<li><input type="checkbox">Finanzas</li>
+					-->
+					{{ acceso|raw }}
 				</ul>
-
 			</div>
 		</fieldset>
 

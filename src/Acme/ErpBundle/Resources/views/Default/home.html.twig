@@ -5,7 +5,9 @@
 	<head>
 
 		<link rel="stylesheet" type="text/css" href="{{ asset('bundles/acmeerp/css/estilos.css') }}">
+		<script type="text/javascript" src="{{ asset('bundles/acmeerp/js/jquery-2.1.3.js') }}" ></script>
 		<script type="text/javascript" src="{{ asset('bundles/acmeerp/js/script.js') }}" ></script>
+
 
 	</head>
 
@@ -40,6 +42,7 @@
 
 				<section class="opcion" >
 
+					<!--
 					<ul class="menu menu-niv" >
 						<li><a href="#" >inicio</a></li>
 						<li>
@@ -69,6 +72,11 @@
 							</ul>
 						</li>
 						<li><a href="#">Finanzas</a></li>
+					</ul>
+					-->
+
+					<ul class="menu menu-niv" >
+						{{ menu|raw }}
 					</ul>	
 
 				</section>

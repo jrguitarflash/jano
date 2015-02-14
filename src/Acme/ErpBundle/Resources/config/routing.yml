@@ -16,3 +16,11 @@ acme_erp_permiso:
 
 acme_erp_inicio:
    path: erp/
+
+acme_erp_perfilAjax:
+   path: erp/perfilAjax/
+   defaults: { _controller:AcmeErpBundle:Default:perfilAjax }
+
+acme_erp_tableroJson:
+   path: erp/tableroJson/
+   defaults: { _controller:AcmeErpBundle:Default:tableroJson }
